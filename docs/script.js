@@ -1,7 +1,7 @@
-const btn = document.getElementById('btn');
-const greeting = document.getElementById('greeting');
-
-btn.addEventListener('click', () => {
-  greeting.textContent = `Clicked at ${new Date().toLocaleTimeString()}. You're live!`;
+// Smooth scroll for nav links
+document.querySelectorAll('nav a').forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    document.querySelector(link.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+  });
 });
-
