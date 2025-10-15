@@ -4,9 +4,9 @@
   --accent: #64b5f6;
   --text: #e9efff;
   --muted: #a4b1c8;
-  --max-width: 900px;
-  --radius: 14px;
+  --radius: 12px;
   --transition: 0.25s ease;
+  --max-width: 900px;
 }
 
 * {
@@ -28,39 +28,53 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background: rgba(0,0,0,0.2);
+  background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(8px);
   position: sticky;
   top: 0;
   z-index: 10;
 }
 
-.navbar .logo {
+.logo {
   font-weight: 800;
   color: var(--accent);
   letter-spacing: 0.5px;
 }
 
-.navbar nav a {
-  color: var(--text);
+/* Nav Buttons */
+.nav-btn {
+  display: inline-block;
+  background: transparent;
+  border: 2px solid var(--accent);
+  color: var(--accent);
+  padding: 0.4rem 0.9rem;
+  border-radius: var(--radius);
+  margin-left: 0.8rem;
   text-decoration: none;
-  margin-left: 1.5rem;
-  transition: color var(--transition);
+  font-weight: 600;
+  transition: all var(--transition);
 }
 
-.navbar nav a:hover {
-  color: var(--accent);
+.nav-btn:hover {
+  background: var(--accent);
+  color: #00132a;
+}
+
+.nav-btn.active {
+  background: var(--accent);
+  color: #00132a;
+  cursor: default;
 }
 
 /* Hero */
 .hero {
-  min-height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 80vh;
   text-align: center;
-  background: radial-gradient(circle at 30% 50%, #16213e, #0a0e1a);
   padding: 3rem 1rem;
+  background: radial-gradient(circle at 30% 50%, #16213e, #0a0e1a);
 }
 
 .hero h2 {
@@ -72,12 +86,12 @@ body {
   color: var(--accent);
 }
 
-.hero .tagline {
+.tagline {
   color: var(--muted);
-  max-width: 550px;
-  margin: 0 auto 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
+/* Generic button style */
 .btn {
   display: inline-block;
   background: var(--accent);
@@ -93,29 +107,23 @@ body {
   background: #90caf9;
 }
 
-.btn.small {
-  font-size: 0.9rem;
-  padding: 0.4rem 0.8rem;
-}
-
 /* Sections */
 .section {
   max-width: var(--max-width);
   margin: 4rem auto;
   padding: 0 1rem;
+  text-align: center;
 }
 
 .section h2 {
   color: var(--accent);
   font-size: 1.8rem;
   margin-bottom: 1rem;
-  text-align: center;
 }
 
-/* About */
-.about p {
-  text-align: center;
+.section p {
   color: var(--muted);
+  margin-bottom: 1rem;
 }
 
 /* Skills */
@@ -125,12 +133,12 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 0.8rem;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 
 .skills-list li {
   background: var(--card);
-  padding: 0.6rem 1rem;
+  padding: 0.6rem 1.2rem;
   border-radius: var(--radius);
   font-weight: 500;
   transition: transform var(--transition);
@@ -140,46 +148,16 @@ body {
   transform: translateY(-3px);
 }
 
-/* Projects */
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-  margin-top: 1.5rem;
-}
-
-.project-card {
-  background: var(--card);
-  padding: 1.2rem;
-  border-radius: var(--radius);
-  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
-  text-align: center;
-  transition: transform var(--transition);
-}
-
-.project-card:hover {
-  transform: translateY(-5px);
-}
-
 /* Contact */
-.contact p {
-  text-align: center;
-  color: var(--muted);
-  margin-bottom: 1rem;
-}
-
 .socials {
   display: flex;
   justify-content: center;
-  gap: 1.2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.5rem;
 }
 
-.socials a {
-  color: var(--accent);
-  text-decoration: none;
-  font-weight: 600;
-}
-
+/* Footer */
 footer {
   text-align: center;
   padding: 1.5rem;
