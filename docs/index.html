@@ -1,68 +1,80 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>AGrumpySoul | Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1 class="logo">AGrumpySoul</h1>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
+  <header class="navbar">
+    <h1 class="logo">AGrumpySoul</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <section id="hero">
-    <div class="container">
-      <h2>Hey there 👋 I'm <span class="accent">AGrumpySoul</span></h2>
-      <p>A creative developer passionate about crafting clean, interactive, and thoughtful web experiences.</p>
-      <a href="#contact" class="button">Get in Touch</a>
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Hello, I'm <span>AGrumpySoul</span> 👋</h2>
+      <p class="tagline">A passionate developer building creative and efficient web experiences.</p>
+      <a href="#contact" class="btn">Get in Touch</a>
     </div>
   </section>
 
-  <section id="about">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>
-        I'm a web developer who enjoys turning ideas into code. I love working with modern tools and
-        experimenting with new technologies. Whether it's building a full-stack project, designing a
-        sleek UI, or automating something just for fun — I’m all in.
-      </p>
-    </div>
+  <section id="about" class="section about">
+    <h2>About Me</h2>
+    <p>
+      I'm a web developer with a love for clean design, smooth interactivity, and meaningful user experiences.
+      Whether I'm coding a backend API or designing an intuitive UI, I focus on simplicity and performance.
+    </p>
   </section>
 
-  <section id="skills">
-    <div class="container">
-      <h2>Skills</h2>
-      <div class="skills-grid">
-        <div class="skill-card">HTML5</div>
-        <div class="skill-card">CSS3</div>
-        <div class="skill-card">JavaScript</div>
-        <div class="skill-card">Node.js</div>
-        <div class="skill-card">Git & GitHub</div>
-        <div class="skill-card">React (Basics)</div>
+  <section id="skills" class="section skills">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>JavaScript / TypeScript</li>
+      <li>HTML / CSS / React</li>
+      <li>Node.js / Express</li>
+      <li>Python</li>
+      <li>Git / GitHub / REST APIs</li>
+    </ul>
+  </section>
+
+  <section id="projects" class="section projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Walkbench Plugin Tools</h3>
+        <p>A toolkit for managing and customizing Minecraft models and server assets efficiently.</p>
+        <a href="#" target="_blank" class="btn small">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>This website itself — built with HTML, CSS, and JavaScript, hosted on GitHub Pages.</p>
+        <a href="#" target="_blank" class="btn small">Source Code</a>
       </div>
     </div>
   </section>
 
-  <section id="contact">
-    <div class="container">
-      <h2>Contact</h2>
-      <p>Have a project or just want to say hi? Reach out!</p>
-      <a href="mailto:youremail@example.com" class="button">Send Email</a>
+  <section id="contact" class="section contact">
+    <h2>Contact</h2>
+    <p>Feel free to reach out — I’m always open to new projects and collaborations.</p>
+    <div class="socials">
+      <a href="mailto:youremail@example.com">Email</a>
+      <a href="https://github.com/AGrumpySoul" target="_blank">GitHub</a>
+      <a href="#" target="_blank">LinkedIn</a>
     </div>
   </section>
 
   <footer>
-    <div class="container">
-      <p>© <span id="year"></span> AGrumpySoul. Built with ❤️ and GitHub Pages.</p>
-    </div>
+    <p>© 2025 AGrumpySoul • Built with 💙 and GitHub Pages</p>
   </footer>
 
   <script src="script.js"></script>
