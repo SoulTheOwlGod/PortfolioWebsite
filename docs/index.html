@@ -1,17 +1,70 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>My Demo Site</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AGrumpySoul | Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <main class="container">
-    <h1>Welcome to My Demo Site</h1>
-    <p id="greeting">This site is hosted on <strong>GitHub Pages</strong>.</p>
-    <button id="btn">Click me</button>
-  </main>
+  <header>
+    <div class="container">
+      <h1 class="logo">AGrumpySoul</h1>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="hero">
+    <div class="container">
+      <h2>Hey there 👋 I'm <span class="accent">AGrumpySoul</span></h2>
+      <p>A creative developer passionate about crafting clean, interactive, and thoughtful web experiences.</p>
+      <a href="#contact" class="button">Get in Touch</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I'm a web developer who enjoys turning ideas into code. I love working with modern tools and
+        experimenting with new technologies. Whether it's building a full-stack project, designing a
+        sleek UI, or automating something just for fun — I’m all in.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">HTML5</div>
+        <div class="skill-card">CSS3</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">Node.js</div>
+        <div class="skill-card">Git & GitHub</div>
+        <div class="skill-card">React (Basics)</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Have a project or just want to say hi? Reach out!</p>
+      <a href="mailto:youremail@example.com" class="button">Send Email</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© <span id="year"></span> AGrumpySoul. Built with ❤️ and GitHub Pages.</p>
+    </div>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
