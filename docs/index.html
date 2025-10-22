@@ -1,183 +1,51 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Portfolio — Home</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luke Knutson Portfolio</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
 </head>
 <body>
-  <header class="site-nav">
-    <div class="container nav-inner">
-      <a class="brand" href="index.html">
-        <div class="logo">SO</div>
-        <h1>Luke — Portfolio</h1>
-      </a>
 
-      <nav class="nav-links" aria-label="Main navigation">
-        <a href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="xq.html">XQ Competencies</a>
-        <a href="impact.html">Impact</a>
-        <a href="#contact" class="btn">Contact</a>
-      </nav>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo"><a href="index.html">Luke Knutson</a></div>
+    <ul class="nav-list">
+      <li class="nav-item"><a href="projects.html">Projects</a></li>
+      <li class="nav-item"><a href="xq.html">XQ Competencies</a></li>
+      <li class="nav-item"><a href="impact.html">Impact</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle Menu">☰</button>
+  </nav>
 
-      <div style="display:flex;align-items:center;gap:8px">
-        <button class="icon-btn theme-toggle" title="Toggle theme" aria-pressed="false">
-          <span class="theme-icon" aria-hidden="true">🌙</span>
-        </button>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to My Portfolio</h1>
+    <p>Exploring projects, competencies, and impact I’ve made.</p>
+    <button class="btn" onclick="document.getElementById('projects').scrollIntoView()">See Projects</button>
+  </section>
 
-        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
-          <!-- hamburger -->
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </button>
+  <!-- Projects Preview -->
+  <section id="projects" class="container">
+    <h2 class="section-title">Featured Projects</h2>
+    <div class="cards-container">
+      <div class="project-card card">
+        <h3>Project Alpha</h3>
+        <p>A brief description of the project, technologies used, and goals.</p>
+      </div>
+      <div class="project-card card">
+        <h3>Project Beta</h3>
+        <p>Another example project with a concise description.</p>
       </div>
     </div>
+  </section>
 
-    <!-- Mobile menu -->
-    <div class="mobile-menu container" style="display:none">
-      <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="xq.html">XQ Competencies</a>
-      <a href="impact.html">Impact</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </header>
+  <!-- Dark Mode Toggle -->
+  <div class="container" style="text-align:center; margin-top:2rem;">
+    <button id="darkModeToggle">Toggle Dark Mode</button>
+  </div>
 
-  <main>
-    <section class="hero container">
-      <div class="hero-left">
-        <span class="kicker">Portfolio</span>
-        <h2>Hi — I'm Luke. I build projects that learn, scale, and create impact.</h2>
-        <p>I design and ship full-stack projects, focusing on clean UX, pragmatic engineering, and thoughtful learning experiences. Below you’ll find my projects and how they map to XQ competencies, plus an impact log where I track results.</p>
-
-        <div class="hero-cta">
-          <a href="projects.html" class="btn">View Projects</a>
-          <a href="xq.html" class="btn" style="background:transparent;color:var(--accent);border:1px solid var(--accent);box-shadow:none;">XQ Competencies</a>
-        </div>
-      </div>
-
-      <aside class="hero-card">
-        <div style="display:flex;align-items:center;justify-content:space-between">
-          <div>
-            <div style="font-size:0.85rem;color:var(--subtext)">Current focus</div>
-            <div style="font-weight:700;margin-top:8px">Responsive portfolios & learning-driven features</div>
-          </div>
-          <div style="text-align:right;color:var(--subtext)">2025</div>
-        </div>
-
-        <hr style="margin:14px 0;border:0;height:1px;background:var(--glass)">
-
-        <div class="meta">
-          <div class="avatar">LK</div>
-          <div>
-            <div style="font-weight:700">Selected Projects</div>
-            <div class="muted" style="font-size:0.9rem">Web apps, tooling, and interactive experiences</div>
-          </div>
-        </div>
-
-        <div style="margin-top:12px" class="tags">
-          <span class="tag">React</span>
-          <span class="tag">Node</span>
-          <span class="tag">Design</span>
-        </div>
-      </aside>
-    </section>
-
-    <section class="section container">
-      <div class="section-header">
-        <div>
-          <h3>Featured Projects</h3>
-          <p class="lead">A handful of projects demonstrating skill and learning — open to view.</p>
-        </div>
-        <a href="projects.html" class="btn">See all projects</a>
-      </div>
-
-      <div class="grid">
-        <!-- project card 1 -->
-        <article class="card">
-          <div class="meta">
-            <div class="avatar">P1</div>
-            <div>
-              <div class="muted">Web App</div>
-              <h4>Interactive Portfolio Engine</h4>
-            </div>
-          </div>
-          <p class="muted" style="margin-top:10px">A modular portfolio system with responsive components, theming, and a performance-first approach.</p>
-          <div class="tags" aria-hidden="true">
-            <span class="tag">Design</span>
-            <span class="tag">Accessibility</span>
-          </div>
-        </article>
-
-        <!-- project card 2 -->
-        <article class="card">
-          <div class="meta">
-            <div class="avatar">P2</div>
-            <div>
-              <div class="muted">Tooling</div>
-              <h4>Build Automation Scripts</h4>
-            </div>
-          </div>
-          <p class="muted" style="margin-top:10px">Scripts and CI helpers that reduce friction in continuous integration and deployment.</p>
-          <div class="tags" aria-hidden="true">
-            <span class="tag">CI/CD</span>
-            <span class="tag">Node</span>
-          </div>
-        </article>
-
-        <!-- project card 3 -->
-        <article class="card">
-          <div class="meta">
-            <div class="avatar">P3</div>
-            <div>
-              <div class="muted">Experiment</div>
-              <h4>Learning Tracker</h4>
-            </div>
-          </div>
-          <p class="muted" style="margin-top:10px">A small app that helps document and visualize skills and XQ competency growth.</p>
-          <div class="tags" aria-hidden="true">
-            <span class="tag">Visualization</span>
-            <span class="tag">UX</span>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="section container">
-      <div class="section-header">
-        <div>
-          <h3>XQ Competencies (Quick)</h3>
-          <p class="lead">Mapped examples available on the dedicated page.</p>
-        </div>
-        <a href="xq.html" class="btn">Explore XQ</a>
-      </div>
-
-      <div class="grid">
-        <div class="card">
-          <h4>Original Thinker</h4>
-          <p class="muted">Creating novel solutions — example: custom animation modules used across the portfolio.</p>
-        </div>
-        <div class="card">
-          <h4>Foundational Knowledge</h4>
-          <p class="muted">Strong fundamentals in web architecture, accessibility, and design systems.</p>
-        </div>
-        <div class="card">
-          <h4>Generous Collaborator</h4>
-          <p class="muted">Mentoring contributors and documenting project onboarding clearly.</p>
-        </div>
-      </div>
-    </section>
-
-    <footer class="site-footer container">
-      <div id="contact">
-        <strong>Contact</strong> — <a href="mailto:you@example.com">you@example.com</a>
-      </div>
-      <div style="margin-top:12px" class="muted">© Luke — Portfolio</div>
-    </footer>
-  </main>
+  <script src="script.js"></script>
 </body>
 </html>
