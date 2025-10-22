@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Projects — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Your Name</a>
+
+      <nav class="main-nav" id="main-nav-2">
+        <a href="index.html">Home</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="xq.html">XQ Competencies</a>
+        <a href="impact.html">Impact</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="theme-toggle-2" class="icon-btn" aria-label="Toggle theme">🌙</button>
+        <button id="nav-toggle-2" class="icon-btn nav-toggle" aria-label="Toggle navigation">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section container">
+      <h1>Projects</h1>
+      <p class="lead muted">A selection of projects with short descriptions. Cards are responsive and follow the tangerine theme.</p>
+
+      <div class="cards-grid projects-grid">
+        <article class="card project-card">
+          <h3>Portfolio Website</h3>
+          <p>Static site, responsive design, and dark mode toggle. Built for clarity and quick edits.</p>
+          <p class="meta">Tech: HTML, CSS, JS</p>
+          <div class="card-actions">
+            <a class="btn small" href="#">Repo</a>
+            <a class="btn small outline" href="#">Live</a>
+          </div>
+        </article>
+
+        <article class="card project-card">
+          <h3>Collaboration Tracker</h3>
+          <p>A mini-app for documenting team wins and impact statements.</p>
+          <p class="meta">Tech: Node, Express, SQLite</p>
+          <div class="card-actions">
+            <a class="btn small" href="#">Repo</a>
+          </div>
+        </article>
+
+        <article class="card project-card">
+          <h3>Canvas Animations</h3>
+          <p>Custom performant animations built with plain canvas and requestAnimationFrame.</p>
+          <p class="meta">Tech: JS</p>
+          <div class="card-actions">
+            <a class="btn small" href="#">Demo</a>
+          </div>
+        </article>
+
+        <!-- Add more project cards here -->
+      </div>
+    </section>
+
+    <section class="section container" id="contact">
+      <h2>Contact</h2>
+      <p class="muted">Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year-2"></span> Your Name</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
