@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>XQ Competencies — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Your Name</a>
+
+      <nav class="main-nav" id="main-nav-3">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="xq.html" class="active">XQ Competencies</a>
+        <a href="impact.html">Impact</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="theme-toggle-3" class="icon-btn" aria-label="Toggle theme">🌙</button>
+        <button id="nav-toggle-3" class="icon-btn nav-toggle" aria-label="Toggle navigation">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section container">
+      <h1>XQ Competencies</h1>
+      <p class="lead muted">Below are the official XQ learner outcomes, each followed by example entries showing how I’ve demonstrated them in projects.</p>
+
+      <div class="competencies-grid">
+        <article class="card competency">
+          <h3>Foundational Knowledge</h3>
+          <p class="muted">Understanding core academic content and applying it to real situations.</p>
+          <div class="examples">
+            <h4>Examples</h4>
+            <ul>
+              <li><strong>Portfolio Website</strong> — Implemented semantic HTML and responsive CSS to ensure content is accessible across devices.</li>
+              <li><strong>Data Visualization</strong> — Built a charting module that transforms CSV data into interactive SVG charts, demonstrating applied math and data literacy.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="card competency">
+          <h3>Original Thinker</h3>
+          <p class="muted">Generate solutions, ask useful questions, and use creative thinking.</p>
+          <div class="examples">
+            <h4>Examples</h4>
+            <ul>
+              <li><strong>Custom Canvas Animations</strong> — Designed a reusable animation system that allowed rapid prototyping of UI micro-interactions.</li>
+              <li><strong>Optimization Sprint</strong> — Reworked a slow rendering pipeline and reduced frame time by 40%.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="card competency">
+          <h3>Generous Collaborator</h3>
+          <p class="muted">Work productively with others, give & receive feedback, and contribute to group outcomes.</p>
+          <div class="examples">
+            <h4>Examples</h4>
+            <ul>
+              <li><strong>Open-source contributions</strong> — Submitted PRs to a UI library to add accessibility improvements and documented the changes for others.</li>
+              <li><strong>Team handbook</strong> — Co-authored a lightweight process guide for handoffs that reduced onboarding time for teammates.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="card competency">
+          <h3>Learner for Life</h3>
+          <p class="muted">Reflect, self-direct learning, and adapt to new challenges.</p>
+          <div class="examples">
+            <h4>Examples</h4>
+            <ul>
+              <li><strong>Personal Study Plan</strong> — Completed a 6-week JS deep-dive and published notes that helped me implement better testing practices.</li>
+              <li><strong>Workshop</strong> — Organized a workshop teaching responsive design basics to a local community group.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="card competency">
+          <h3>Healthy Creator</h3>
+          <p class="muted">Promote wellbeing, practice responsible work habits, and create sustainable solutions.</p>
+          <div class="examples">
+            <h4>Examples</h4>
+            <ul>
+              <li><strong>Performance-first mindset</strong> — Prioritized performance budgets in projects to improve battery life on mobile devices.</li>
+              <li><strong>Inclusive design</strong> — Implemented high-contrast mode and keyboard navigation in a public-facing tool.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container" id="contact">
+      <h2>Contact</h2>
+      <p class="muted">Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year-3"></span> Your Name</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
