@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — Projects</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
+        <div class="logo">SO</div>
+        <h1>Luke — Portfolio</h1>
+      </a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="xq.html">XQ Competencies</a>
+        <a href="impact.html">Impact</a>
+        <a href="#contact" class="btn">Contact</a>
+      </nav>
+
+      <div style="display:flex;align-items:center;gap:8px">
+        <button class="icon-btn theme-toggle" title="Toggle theme">
+          <span class="theme-icon" aria-hidden="true">🌙</span>
+        </button>
+        <button class="nav-toggle" aria-label="Toggle menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu container" style="display:none">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="xq.html">XQ Competencies</a>
+      <a href="impact.html">Impact</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section container" style="padding-top:32px">
+      <div class="section-header">
+        <div>
+          <h3>Projects</h3>
+          <p class="lead">A curated list of projects. Replace or add project cards below as needed.</p>
+        </div>
+        <a href="index.html" class="btn">Back to Home</a>
+      </div>
+
+      <div class="grid">
+        <!-- Replace these cards with your real projects; keep the structure -->
+        <article class="card">
+          <div class="meta">
+            <div class="avatar">01</div>
+            <div>
+              <div class="muted">Web App</div>
+              <h4>Interactive Portfolio Engine</h4>
+            </div>
+          </div>
+
+          <p class="muted" style="margin-top:10px">A responsive engine for portfolio sections, theming, and snippets. Built with performance and accessibility in mind.</p>
+
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-top:12px">
+            <div class="muted">Tech: React • CSS</div>
+            <a href="#" class="btn" style="background:transparent;color:var(--accent);border:1px solid var(--accent);box-shadow:none">View</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="meta">
+            <div class="avatar">02</div>
+            <div>
+              <div class="muted">Tooling</div>
+              <h4>CI Helpers</h4>
+            </div>
+          </div>
+
+          <p class="muted" style="margin-top:10px">Automation scripts for tests, linting, and deployment pipelines that cut release time and reduce errors.</p>
+
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-top:12px">
+            <div class="muted">Tech: Node • Bash</div>
+            <a href="#" class="btn" style="background:transparent;color:var(--accent);border:1px solid var(--accent);box-shadow:none">Details</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="meta">
+            <div class="avatar">03</div>
+            <div>
+              <div class="muted">Experiment</div>
+              <h4>Learning Tracker</h4>
+            </div>
+          </div>
+
+          <p class="muted" style="margin-top:10px">Small app to log learning artifacts and visualize progress mapped to XQ competencies.</p>
+
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-top:12px">
+            <div class="muted">Tech: D3 • Vanilla JS</div>
+            <a href="#" class="btn" style="background:transparent;color:var(--accent);border:1px solid var(--accent);box-shadow:none">Open</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <footer class="site-footer container">
+      <div id="contact">
+        <strong>Contact</strong> — <a href="mailto:you@example.com">you@example.com</a>
+      </div>
+      <div style="margin-top:12px" class="muted">© Luke — Portfolio</div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
