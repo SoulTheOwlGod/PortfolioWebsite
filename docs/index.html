@@ -1,51 +1,33 @@
-<!DOCTYPE html>
-<html lang="en" data-theme="light">
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Luke Knutson Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Home | AGrumpySoul Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
+  <header class="navbar">
+    <h1 class="logo">AGrumpySoul</h1>
+    <nav>
+      <a href="index.html" class="nav-btn active">Home</a>
+      <a href="about.html" class="nav-btn">About</a>
+      <a href="skills.html" class="nav-btn">Skills</a>
+      <a href="contact.html" class="nav-btn">Contact</a>
+    </nav>
+  </header>
 
-  <!-- Navbar -->
-  <nav class="navbar">
-    <div class="logo"><a href="index.html">Luke Knutson</a></div>
-    <ul class="nav-list">
-      <li class="nav-item"><a href="projects.html">Projects</a></li>
-      <li class="nav-item"><a href="xq.html">XQ Competencies</a></li>
-      <li class="nav-item"><a href="impact.html">Impact</a></li>
-    </ul>
-    <button class="nav-toggle" aria-label="Toggle Menu">☰</button>
-  </nav>
-
-  <!-- Hero Section -->
   <section class="hero">
-    <h1>Welcome to My Portfolio</h1>
-    <p>Exploring projects, competencies, and impact I’ve made.</p>
-    <button class="btn" onclick="document.getElementById('projects').scrollIntoView()">See Projects</button>
-  </section>
-
-  <!-- Projects Preview -->
-  <section id="projects" class="container">
-    <h2 class="section-title">Featured Projects</h2>
-    <div class="cards-container">
-      <div class="project-card card">
-        <h3>Project Alpha</h3>
-        <p>A brief description of the project, technologies used, and goals.</p>
-      </div>
-      <div class="project-card card">
-        <h3>Project Beta</h3>
-        <p>Another example project with a concise description.</p>
-      </div>
+    <div class="hero-content">
+      <h2>Hello, I'm <span>AGrumpySoul</span> 👋</h2>
+      <p class="tagline">Creative developer & designer crafting efficient web experiences.</p>
+      <a href="contact.html" class="btn primary">Get in Touch</a>
     </div>
   </section>
 
-  <!-- Dark Mode Toggle -->
-  <div class="container" style="text-align:center; margin-top:2rem;">
-    <button id="darkModeToggle">Toggle Dark Mode</button>
-  </div>
-
-  <script src="script.js"></script>
+  <footer>
+    <p>© 2025 AGrumpySoul • Built with 💙 using GitHub Pages</p>
+  </footer>
 </body>
 </html>
