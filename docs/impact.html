@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — Impact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
+        <div class="logo">SO</div>
+        <h1>Luke — Portfolio</h1>
+      </a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="xq.html">XQ Competencies</a>
+        <a href="impact.html">Impact</a>
+        <a href="#contact" class="btn">Contact</a>
+      </nav>
+
+      <div style="display:flex;align-items:center;gap:8px">
+        <button class="icon-btn theme-toggle" title="Toggle theme">
+          <span class="theme-icon" aria-hidden="true">🌙</span>
+        </button>
+        <button class="nav-toggle" aria-label="Toggle menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu container" style="display:none">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="xq.html">XQ Competencies</a>
+      <a href="impact.html">Impact</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section container" style="padding-top:32px">
+      <div class="section-header">
+        <div>
+          <h3>Impact</h3>
+          <p class="lead">A place to record things you've done and the measurable or qualitative impact they had. This is static HTML, easy to edit — each entry is a card.</p>
+        </div>
+        <a href="xq.html" class="btn">Link to XQ</a>
+      </div>
+
+      <div class="grid">
+        <!-- Impact entry 1 -->
+        <article class="card impact-entry">
+          <div class="avatar">I1</div>
+          <div class="impact-body">
+            <h4>Launched Student Help Site — Increased Support Access</h4>
+            <p class="muted">Created a small documentation site for onboarding students, making resources easier to find.</p>
+            <p style="margin-top:8px"><strong>Impact:</strong> Reduced onboarding questions by ~40% in the first month; improved time-to-first-success for new contributors.</p>
+            <div class="tags">
+              <span class="tag">Documentation</span>
+              <span class="tag">UX</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Impact entry 2 -->
+        <article class="card impact-entry">
+          <div class="avatar">I2</div>
+          <div class="impact-body">
+            <h4>CI Tooling — Shortened Release Cycle</h4>
+            <p class="muted">Built automated scripts to run tests and deployments on merge.</p>
+            <p style="margin-top:8px"><strong>Impact:</strong> Cut release time by ~30% and reduced deployment errors by 70%.</p>
+            <div class="tags">
+              <span class="tag">CI/CD</span>
+              <span class="tag">Reliability</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Impact entry 3 -->
+        <article class="card impact-entry">
+          <div class="avatar">I3</div>
+          <div class="impact-body">
+            <h4>Accessibility Pass — Improved Site Accessibility</h4>
+            <p class="muted">Conducted an accessibility audit and implemented fixes (keyboard navigation, semantic headings, alt text).</p>
+            <p style="margin-top:8px"><strong>Impact:</strong> Improved Lighthouse accessibility score from 68 to 92; better UX for keyboard and screen-reader users.</p>
+            <div class="tags">
+              <span class="tag">A11y</span>
+              <span class="tag">Testing</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div style="margin-top:20px" class="muted">
+        Tip: To add a new entry, copy one of the cards above and replace the title, description, and impact text. Keep the card structure for consistent layout.
+      </div>
+    </section>
+
+    <footer class="site-footer container">
+      <div id="contact">
+        <strong>Contact</strong> — <a href="mailto:you@example.com">you@example.com</a>
+      </div>
+      <div style="margin-top:12px" class="muted">© Luke — Portfolio</div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
