@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Impact — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Your Name</a>
+
+      <nav class="main-nav" id="main-nav-4">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="xq.html">XQ Competencies</a>
+        <a href="impact.html" class="active">Impact</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="theme-toggle-4" class="icon-btn" aria-label="Toggle theme">🌙</button>
+        <button id="nav-toggle-4" class="icon-btn nav-toggle" aria-label="Toggle navigation">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section container">
+      <h1>Impact</h1>
+      <p class="lead muted">Document the things you've done and the measurable impact they had. These entries are static and easy to edit in HTML.</p>
+
+      <div class="impact-list">
+        <article class="card impact-card">
+          <h3>Weekly Coding Workshop</h3>
+          <p class="muted">Led free weekly workshops (6 months) teaching front-end basics to beginners.</p>
+          <div class="impact-meta">
+            <strong>Impact:</strong> Increased participant confidence; 22 attendees published a portfolio prototype within 3 months.
+          </div>
+        </article>
+
+        <article class="card impact-card">
+          <h3>Accessibility Improvements — Open-source UI</h3>
+          <p class="muted">Proposed and implemented accessible form controls and ARIA attributes.</p>
+          <div class="impact-meta">
+            <strong>Impact:</strong> Reduced accessibility bugs reported by users by 60% and improved keyboard navigation coverage.
+          </div>
+        </article>
+
+        <article class="card impact-card">
+          <h3>Performance Budget Initiative</h3>
+          <p class="muted">Introduced and enforced a lightweight performance budget for client apps.</p>
+          <div class="impact-meta">
+            <strong>Impact:</strong> Page load times decreased by 25% on average across monitored pages; better mobile retention.
+          </div>
+        </article>
+
+        <!-- Add your own entries below by copying a .impact-card -->
+      </div>
+    </section>
+
+    <section class="section container" id="contact">
+      <h2>Contact</h2>
+      <p class="muted">Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year-4"></span> Your Name</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
