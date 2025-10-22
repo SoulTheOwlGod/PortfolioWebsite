@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — XQ Competencies</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
+        <div class="logo">SO</div>
+        <h1>Luke — Portfolio</h1>
+      </a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="xq.html">XQ Competencies</a>
+        <a href="impact.html">Impact</a>
+        <a href="#contact" class="btn">Contact</a>
+      </nav>
+
+      <div style="display:flex;align-items:center;gap:8px">
+        <button class="icon-btn theme-toggle" title="Toggle theme">
+          <span class="theme-icon" aria-hidden="true">🌙</span>
+        </button>
+        <button class="nav-toggle" aria-label="Toggle menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu container" style="display:none">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="xq.html">XQ Competencies</a>
+      <a href="impact.html">Impact</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section container" style="padding-top:32px">
+      <div class="section-header">
+        <div>
+          <h3>XQ Competencies</h3>
+          <p class="lead">Below are the five XQ competencies with short descriptions and example entries showing how I demonstrated each through projects or activities.</p>
+        </div>
+        <a href="projects.html" class="btn">Related Projects</a>
+      </div>
+
+      <div class="xq-grid">
+        <!-- Foundational Knowledge -->
+        <article class="card">
+          <div class="meta">
+            <div class="avatar">FK</div>
+            <div>
+              <div class="muted">Foundational Knowledge</div>
+              <h4>Understanding core ideas and facts</h4>
+            </div>
+          </div>
+
+          <p class="muted" style="margin-top:10px">Strong grounding in web fundamentals (HTML/CSS/JS), accessibility, and performance practices.</p>
+
+          <div style="margin-top:12px">
+            <strong>Example</strong>
+            <p class="muted" style="margin-top:6px">Built the portfolio's responsive layout and accessibility features (semantic markup, keyboard navigation, alt text, and performance optimizations like image sizing and critical CSS).</p>
+          </div>
+        </article>
+
+        <!-- Original Thinker -->
+        <article class="card">
+          <div class="meta">
+            <div class="avatar">OT</div>
+            <div>
+              <div class="muted">Original Thinker</div>
+              <h4>Apply learning in creative ways</h4>
+            </div>
+          </div>
+
+          <p class="muted" style="margin-top:10px">Designing new patterns and solutions for user interaction and visual storytelling.</p>
+
+          <div style="margin-top:12px">
+            <strong>Example</strong>
+            <p class="muted" style="margin-top:6px">Implemented a custom animation system for project previews that reduces CPU usage by using transform-based animations and requestAnimationFrame batching.</p>
+          </div>
+        </article>
+
+        <!-- Generous Collaborator -->
+        <article class="card">
+          <div class="meta">
+            <div class="avatar">GC</div>
+            <div>
+              <div class="muted">Generous Collaborator</div>
+              <h4>Work productively with others</h4>
+            </div>
+          </div>
+
+          <p class="muted" style="margin-top:10px">Open communication, clear documentation, and mentorship of contributors.</p>
+
+          <div style="margin-top:12px">
+            <strong>Example</strong>
+            <p class="muted" style="margin-top:6px">Documented onboarding steps and style guide for a community project, reducing setup time for new contributors and increasing PR quality.</p>
+          </div>
+        </article>
+
+        <!-- Learner for Life -->
+        <article class="card">
+          <div class="meta">
+            <div class="avatar">LL</div>
+            <div>
+              <div class="muted">Learner for Life</div>
+              <h4>Curious and continuous improvement</h4>
+            </div>
+          </div>
+
+          <p class="muted" style="margin-top:10px">Iterative learning and sharing of new techniques, languages, and practices.</p>
+
+          <div style="margin-top:12px">
+            <strong>Example</strong>
+            <p class="muted" style="margin-top:6px">Kept a learning log and built micro-projects for new libraries (e.g., visualization experiments) and wrote short guides to capture lessons learned.</p>
+          </div>
+        </article>
+
+        <!-- Healthy Creator -->
+        <article class="card">
+          <div class="meta">
+            <div class="avatar">HC</div>
+            <div>
+              <div class="muted">Healthy Creator</div>
+              <h4>Maintain wellbeing while creating</h4>
+            </div>
+          </div>
+
+          <p class="muted" style="margin-top:10px">Creating sustainably with balance, attention to community, and iterative timelines.</p>
+
+          <div style="margin-top:12px">
+            <strong>Example</strong>
+            <p class="muted" style="margin-top:6px">Structured projects with realistic milestones, logged time and impact, and built routines that prevented burnout while maintaining steady progress.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="section" style="margin-top:22px">
+        <h3>How to use this page</h3>
+        <p class="muted">Copy the example entries to add more examples. Each card is small and self-contained so you can quickly edit the description and link to projects that demonstrate the competency. Format suggestion: <em>Title — Short action — Outcome/impact</em>.</p>
+      </div>
+    </section>
+
+    <footer class="site-footer container">
+      <div id="contact">
+        <strong>Contact</strong> — <a href="mailto:you@example.com">you@example.com</a>
+      </div>
+      <div style="margin-top:12px" class="muted">© Luke — Portfolio</div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
